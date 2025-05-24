@@ -508,7 +508,7 @@ public class FormNota extends javax.swing.JFrame {
         Date tgl = (Date) txtTgl.getValue();
         stmt.setString(3, new SimpleDateFormat("yyyy-MM-dd").format(tgl));
         stmt.setInt(4, Integer.parseInt(txtTotalharga.getText()));
-        stmt.setString(5, Session.getIdKasir());
+            stmt.setString(5, Session.getIdKasir());
         stmt.executeUpdate();
 
         // Simpan detail transaksi
